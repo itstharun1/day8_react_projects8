@@ -1,7 +1,7 @@
 import './index.css'
 const Home=()=>
     (
-        <div className="box3"> 
+        <div className="home"> 
             <h1>Home</h1>
         </div>
     )

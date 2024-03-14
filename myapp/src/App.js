@@ -8,14 +8,14 @@ import NotFound from "./components/Notfound"
 
 const App = () => (
   <BrowserRouter>
-    <Header />
-      <Routes>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route component={NotFound} />
-      </Routes>
- </BrowserRouter>
+  <Header/>
+  <Routes>
+    <Route path="/" element={<Home  />}></Route>
+    <Route path="/about" element={<About />}></Route>
+    <Route path="/*" element={<NotFound />}></Route>
+    <Route path="/contact" element={<Contact/>}></Route>
+  </Routes>
+  </BrowserRouter>
 )
 
 export default App
